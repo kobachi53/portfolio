@@ -41,7 +41,8 @@ export default {
   animation: text-in 0.8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards;
 }
 .TextAnime1 {
-  padding: 310px 360px;
   font-size: 66px;
+  text-align: center;
+  padding-top: 340px;
 }
 </style>
