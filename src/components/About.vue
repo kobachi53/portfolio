@@ -24,6 +24,10 @@
             </li>
           </ul>
         </div>
+        <div>
+          <img src="../assets/twitter.png" alt />
+          <img src="../assets/github.png" alt />
+        </div>
       </div>
       <div class="conteiner_child">
         <h1 style="padding-top:35px">Skills</h1>
