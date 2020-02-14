@@ -8,20 +8,48 @@
           <img src="../assets/logo.png" style="width:18%" alt />
         </div>
         <div class="about">
-          <h2>・Name：西村智帆（Nishimura Chiho）</h2>
-          <h2>・University：創価大学工学部生命情報工学科</h2>
-          <h2>・Qiita：</h2>
+          <ul>
+            <li>
+              <span style="font-weight: bold;">Name：</span> 西村智帆（Nishimura Chiho）
+            </li>
+            <li>
+              <span style="font-weight: bold;">University：</span>創価大学工学部生命情報工学科
+            </li>
+            <li>
+              <span style="font-weight: bold;">Qiita：</span>
+              <a
+                style="display: contents; font-size:20px;"
+                href="https://qiita.com/mutsuki53"
+              >@mutsuki53</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="conteiner_child">
         <h1 style="padding-top:35px">Skills</h1>
         <div class="skills">
-          <h2 style="margin: 5% 10% 0px 10px;">Front-end</h2>
-          <div class="skillbox">sss</div>
-          <h2 style="margin: 2% 10%;">Back-end</h2>
-          <div class="skillbox">sss</div>
-          <h2 style="margin: 2% 10%;">Other</h2>
-          <div class="skillbox">sss</div>
+          <div class="skills_child">
+            <h2 class="front">Front-end</h2>
+            <div class="skillbox">
+              ・Sample
+              <br />・Sample
+              <br />・Sample
+            </div>
+          </div>
+          <div>
+            <h2 class="front">Back-end</h2>
+            <div class="skillbox">
+              ・Sample
+              <br />・Sample
+            </div>
+          </div>
+          <div>
+            <h2 class="front">Other</h2>
+            <div class="skillbox">
+              ・Sample
+              <br />・Sample
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -58,21 +86,41 @@ body,
   text-align: center;
 }
 
+/* About部分のCSS */
+
 .picture {
   text-align: center;
   padding: 30px 0px;
 }
 
 .about {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
 }
+
+li {
+  margin-bottom: 17px;
+  font-size: 125%;
+}
+
+/* Skills部分のCSS */
 
 .skills {
   text-align: center;
 }
 
+.front {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+
 .skillbox {
   border: 0.1px solid;
   margin: 0% 25%;
+  text-align: left;
 }
 </style>
