@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Home from "../components/Works";
+import Works from "../components/Works";
 export default {
   components: {
     Works

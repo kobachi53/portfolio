@@ -61,10 +61,4 @@ export default {
   width: 23%;
   border: 0.1px solid;
 }
-
-/* input {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  width: 23%;
-} */
 </style>

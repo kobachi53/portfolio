@@ -1,6 +1,9 @@
 <template>
-  <div>
+  <div class="parent">
     <navber></navber>
+    <div class="title">
+      <h1 style="padding-top:35px">Experiences</h1>
+    </div>
   </div>
 </template>
 
@@ -15,6 +18,8 @@ export default {
 };
 </script>
 
-
-<style scoped>
+<style>
+.title {
+  text-align: center;
+}
 </style>
