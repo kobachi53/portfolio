@@ -19,12 +19,12 @@ const routes = [
   // {
   //   path: "/experiences",
   //   name: "Experiences",
-  //   component: Experiences
+  //   import(/* webpackChunkName: "experiences" */ "../views/Experiences.vue")
   // },
   // {
   //   path: "/works",
   //   name: "Works",
-  //   component: Works
+  //   import(/* webpackChunkName: "works" */ "../views/Works.vue")
   // },
   {
     path: "/contact",
