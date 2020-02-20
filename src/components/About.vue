@@ -9,24 +9,17 @@
         </div>
         <div class="about">
           <ul>
-            <li>
-              <span style="font-weight: bold;">Name：</span> 西村智帆（Nishimura Chiho）
-            </li>
-            <li>
-              <span style="font-weight: bold;">University：</span>創価大学工学部生命情報工学科
-            </li>
+            <li><span style="font-weight: bold;">Name：</span> 西村智帆（Nishimura Chiho）</li>
+            <li><span style="font-weight: bold;">University：</span>創価大学工学部生命情報工学科</li>
             <li>
               <span style="font-weight: bold;">Qiita：</span>
-              <a
-                style="display: contents; font-size:20px;"
-                href="https://qiita.com/mutsuki53"
-              >@mutsuki53</a>
+              <a style="display: contents; font-size:20px;" href="https://qiita.com/mutsuki53">@mutsuki53</a>
             </li>
           </ul>
         </div>
-        <div>
-          <img src="../assets/twitter.png" alt />
-          <img src="../assets/github.png" alt />
+        <div style="padding-top:20px">
+          <a style="display: contents;" href="https://twitter.com/rtc_nws"><img style="padding-right:40px;" src="../assets/twitter.png" alt/></a>
+          <a style="display: contents;" href="https://github.com/kobachi53"><img src="../assets/github.png" alt/></a>
         </div>
       </div>
       <div class="conteiner_child">
@@ -36,8 +29,7 @@
             <h2 class="front">Front-end</h2>
             <div class="skillbox">
               ・Sample
-              <br />・Sample
-              <br />・Sample
+              <br />・Sample <br />・Sample
             </div>
           </div>
           <div>
