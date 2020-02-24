@@ -9,7 +9,7 @@
             <span>{{ experience.term }}</span>
             <span class="elevation-2">
               <v-card-title style="justify-content: center;">
-                {{ experience.pjname + " " + experience.value }}
+                {{ experience.pjName + " " + experience.position }}
               </v-card-title>
               <v-card-text>
                 {{ experience.description }}
@@ -24,6 +24,8 @@
 
 <script>
 import Navber from "../components/Navber";
+import { db } from "../plugins/firebase";
+
 export default {
   name: "Experiences",
   components: {
@@ -32,26 +34,7 @@ export default {
   data() {
     return {
       width: window.innerWidth,
-      experiences: [
-        {
-          pjname: "CAMPHOR-",
-          value: "コアメンバー",
-          term: "2019/01 ~ Present",
-          description: "京都のIT系学生コミュニティであるCAMPHOR-の運営を行っています。学生なら誰でも無料で使えるワークスペースの管理や勉強会の企画・開催などを行っています。"
-        },
-        {
-          pjname: "アカツキ ",
-          value: "就業型インターン",
-          term: "2019/09",
-          description: "OSSであるaktsk/atgenという静的解析を用いたGoのテストジェネレーターの機能追加やゲーム内通貨管理サービスの大規模なアプリケーション設計の改善を行いました。"
-        },
-        {
-          pjname: "AbemaTV ",
-          value: "就業型インターン",
-          term: "2019/08",
-          description: "SNSから番組への流入を増やすためにTwitterシェアに関する機能を追加しました。スケーラビリティを考慮しつつ仕様設計から実装、テストを全て行いました。"
-        }
-      ]
+      experiences: []
     };
   },
   computed: {
@@ -72,6 +55,11 @@ export default {
     handleResize: function() {
       this.width = window.innerWidth;
     }
+  },
+  firestore() {
+    return {
+      experiences: db.collection("experiences").orderBy("startDay", "asc")
+    };
   }
 };
 </script>

@@ -5,7 +5,7 @@
       <div class="conteiner_child">
         <h1 style="padding-top:35px">About</h1>
         <div class="picture">
-          <img src="../assets/logo.png" style="width:18%" alt />
+          <img src="../assets/neneco.png" style="width:18%" alt />
         </div>
         <div class="about">
           <ul>

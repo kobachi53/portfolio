@@ -13,7 +13,7 @@
               <div class="headline">{{ work.title }}</div>
             </v-card-title>
             <v-card-subtitle>
-              <span class="blue-grey--text" v-text="work.Description"></span>
+              <span class="blue-grey--text" v-text="work.description"></span>
             </v-card-subtitle>
             <v-chip v-for="(tech, i) in usedTech(work.usedTech)" :key="i" class="chips" color="#ADDFAD" text-color="white" v-text="tech"></v-chip>
           </v-card>
@@ -25,6 +25,8 @@
 
 <script>
 import Navber from "../components/Navber";
+import { db } from "../plugins/firebase";
+
 export default {
   name: "Works",
   components: {
@@ -39,37 +41,13 @@ export default {
     }
   },
   data: () => ({
-    works: [
-      {
-        imgName: "sample.jpg",
-        title: "ポートフォリオ",
-        Description: "当サイトです。vue.jsとfirebaseを使用したシンプルなポートフォリオです。",
-        URLs: "https://www.google.com/?hl=ja",
-        usedTech: "Vue.js,firebase"
-      },
-      {
-        imgName: "sample.jpg",
-        title: "作品名2",
-        Description: "作品の説明2",
-        URLs: "#",
-        usedTech: "使用技術2"
-      },
-      {
-        imgName: "sample.jpg",
-        title: "作品名",
-        Description: "作品の説明",
-        URLs: "url",
-        usedTech: "使用技術"
-      },
-      {
-        imgName: "sample.jpg",
-        title: "作品名",
-        Description: "作品の説明",
-        URLs: "url",
-        usedTech: "使用技術"
-      }
-    ]
-  })
+    works: []
+  }),
+  firestore() {
+    return {
+      works: db.collection("works").orderBy("createdAt")
+    };
+  }
 };
 </script>
 
