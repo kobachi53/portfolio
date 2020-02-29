@@ -1,6 +1,7 @@
 import Vue from "vue";
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/functions";
 import { firestorePlugin } from "vuefire";
 
 Vue.use(firestorePlugin);
@@ -17,3 +18,4 @@ const firebaseApp = firebase.initializeApp({
 });
 
 export const db = firebaseApp.firestore();
+export const functions = firebase.functions();

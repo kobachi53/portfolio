@@ -9,9 +9,11 @@
             <span>{{ experience.term }}</span>
             <span class="elevation-2">
               <v-card-title style="justify-content: center;">
-                {{ experience.pjName + " " + experience.position }}
+                {{ experience.pjName }}
               </v-card-title>
               <v-card-text>
+                ・担当フェーズ：{{ experience.phase }} <br />
+                ・使用技術：{{ experience.usedSkill }} <br /><br />
                 {{ experience.description }}
               </v-card-text>
             </span>
@@ -58,7 +60,7 @@ export default {
   },
   firestore() {
     return {
-      experiences: db.collection("experiences").orderBy("startDay", "asc")
+      experiences: db.collection("experiences").orderBy("startDay", "desc")
     };
   }
 };

@@ -28,22 +28,23 @@
           <div class="skills_child">
             <h2 class="front">Front-end</h2>
             <div class="skillbox">
-              ・Sample
-              <br />・Sample <br />・Sample
+              ・HTML&emsp;&emsp;・TypeScript
+              <br />・CSS <br />・Angular
             </div>
           </div>
           <div>
             <h2 class="front">Back-end</h2>
             <div class="skillbox">
-              ・Sample
-              <br />・Sample
+              ・Ruby
+              <br />
+              <br />
             </div>
           </div>
           <div>
             <h2 class="front">Other</h2>
             <div class="skillbox">
-              ・Sample
-              <br />・Sample
+              ・VMware
+              <br />・Git <br />・SQL
             </div>
           </div>
         </div>
